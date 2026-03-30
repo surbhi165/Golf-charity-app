@@ -8,7 +8,7 @@ export default function HomePage() {
   <div className="text-2xl font-black italic text-indigo-600">GOLF CHARITY 🏌️‍♂️</div>
   <div className="flex items-center gap-6">
     {/* Admin Link (Sirf aapke liye) */}
-    <Link href="/admin" className="text-sm font-bold text-slate-400 hover:text-indigo-600 transition-colors">
+    <Link href="/admin/login" className="text-sm font-bold text-slate-400 hover:text-indigo-600 transition-colors">
       Admin Panel
     </Link>
     <Link href="/signup" className="bg-slate-900 text-white px-6 py-2 rounded-full font-bold hover:bg-indigo-600 transition-all">
