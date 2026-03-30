@@ -3,13 +3,19 @@ import Link from 'next/link';
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans">
-      {/* 1. Navbar */}
-      <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-        <div className="text-2xl font-black italic text-indigo-600">GOLF CHARITY 🏌️‍♂️</div>
-        <Link href="/signup" className="bg-slate-900 text-white px-6 py-2 rounded-full font-bold hover:bg-indigo-600 transition-all">
-          Get Started
-        </Link>
-      </nav>
+      {/* Navbar Updated with Admin Route */}
+<nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
+  <div className="text-2xl font-black italic text-indigo-600">GOLF CHARITY 🏌️‍♂️</div>
+  <div className="flex items-center gap-6">
+    {/* Admin Link (Sirf aapke liye) */}
+    <Link href="/admin" className="text-sm font-bold text-slate-400 hover:text-indigo-600 transition-colors">
+      Admin Panel
+    </Link>
+    <Link href="/signup" className="bg-slate-900 text-white px-6 py-2 rounded-full font-bold hover:bg-indigo-600 transition-all">
+      Get Started
+    </Link>
+  </div>
+</nav>
 
       {/* 2. Hero Section (Section 1) */}
       <section className="py-20 px-6 text-center max-w-4xl mx-auto">
